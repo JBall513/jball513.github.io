@@ -389,12 +389,6 @@ h2 {
   margin-top: 0.75rem;
 }
 
-.email-address {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin: 0.75rem 0 0;
-}
-
 .contact-section {
   color: var(--ink);
 }
@@ -414,8 +408,9 @@ h2 {
 }
 
 footer {
+  background: #252525;
   border-top: 1px solid var(--line);
-  color: var(--muted);
+  color: white;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
@@ -437,7 +432,7 @@ footer {
 }
 
 .footer-connect h2 {
-  color: var(--ink);
+  color: white;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   margin: 0 0.5rem 0 0;
@@ -445,8 +440,11 @@ footer {
 }
 
 .footer-connect a {
-  color: var(--accent-dark);
+  align-items: center;
+  color: white;
+  display: inline-flex;
   font-weight: 700;
+  gap: 0.4rem;
 }
 
 @media (max-width: 640px) {
