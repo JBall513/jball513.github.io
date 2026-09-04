@@ -271,6 +271,19 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 0.25rem;
   padding: 1.5rem;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.project-card.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+
+.project-card.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-number {
@@ -289,6 +302,13 @@ h2 {
   font-weight: 700;
 }
 
+.status-badge {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+}
+
 .email-link {
   color: var(--accent-dark);
   font-weight: 700;
@@ -301,6 +321,14 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .project-card,
+  .project-card.reveal,
+  .project-card.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
 
