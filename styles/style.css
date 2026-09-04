@@ -69,14 +69,22 @@ footer {
 }
 
 .logo {
-  color: white;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  color: var(--accent-dark);
+  display: inline-flex;
   font-size: 1rem;
   font-weight: 700;
+  height: 2.5rem;
+  justify-content: center;
   text-decoration: none;
+  width: 2.5rem;
 }
 
-.logo span {
-  color: var(--accent);
+.logo:hover,
+.logo:focus-visible {
+  color: var(--accent-dark);
 }
 
 .availability {
@@ -105,17 +113,23 @@ footer {
   color: var(--accent);
 }
 
-.navigation .nav-action {
-  border: 1px solid #e8b34a;
-  border-radius: 999px;
-  color: #f5c45f;
-  padding: 0.35rem 0.9rem;
+.navigation li {
+  position: relative;
 }
 
-.navigation .nav-action:hover,
-.navigation .nav-action:focus-visible {
-  background: #e8b34a;
-  color: #252525;
+.navigation li .active {
+  color: white;
+  font-weight: 700;
+}
+
+.navigation li .active::after {
+  background: #f5c45f;
+  bottom: -0.85rem;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .menu-toggle {
@@ -391,6 +405,35 @@ footer {
   padding-top: 2rem;
 }
 
+.footer-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-connect {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-connect h2 {
+  color: var(--ink);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  margin: 0 0.5rem 0 0;
+  text-transform: uppercase;
+}
+
+.footer-connect a {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
 @media (max-width: 640px) {
   .navigation {
     min-height: 3.5rem;
@@ -414,13 +457,13 @@ footer {
     display: block;
   }
 
-  .availability {
-    margin: 0 0 0.75rem;
-  }
-
   .navigation ul {
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .navigation li .active::after {
+    bottom: -0.25rem;
   }
 
   .intro {
@@ -462,5 +505,16 @@ footer {
   .skill-list,
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-content,
+  .footer-connect {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-connect {
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
 }
