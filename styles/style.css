@@ -302,11 +302,22 @@ h2 {
   font-weight: 700;
 }
 
-.status-badge {
-  border: 1px solid currentColor;
+.component-status {
   border-radius: 999px;
   display: inline-block;
   padding: 0.2rem 0.65rem;
+}
+
+.component-status.-pending {
+  background: #fff1c7;
+  border: 1px solid #c98a00;
+  color: #7a5200;
+}
+
+.component-status.-diary {
+  background: #eee8f8;
+  border: 1px solid var(--accent);
+  color: var(--accent-dark);
 }
 
 .email-link {
