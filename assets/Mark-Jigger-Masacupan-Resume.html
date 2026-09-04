@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <title>Mark Jigger Masacupan - Resume</title>
   <style>
-    @page { size: A4; margin: 0.38in; }
+    @page { size: A4; margin: 0.45in; }
     body { color: #111; font: 11pt Arial, sans-serif; line-height: 1; margin: 0 auto; max-width: 760px; }
     header { text-align: center; }
     h1 { font-size: 18pt; margin: 0 0 3px; }
-    h2 { border-bottom: 1px solid #333; font-size: 11pt; margin: 8px 0 4px; padding-bottom: 2px; text-transform: uppercase; }
-    h3 { font-size: 11pt; margin: 4px 0 1px; }
-    p { margin: 3px 0; }
-    ul { margin: 3px 0 4px; padding-left: 17px; }
+    h2 { border-bottom: 1px solid #333; font-size: 11pt; margin: 13px 0 6px; padding-bottom: 2px; text-transform: uppercase; }
+    h3 { font-size: 11pt; margin: 0; }
+    p { margin: 3px 0 8px; }
+    ul { margin: 3px 0 8px; padding-left: 17px; }
     .contact { margin-bottom: 8px; }
-    .date { display: block; font-weight: normal; }
+    .entry-heading { align-items: baseline; display: flex; gap: 1rem; justify-content: space-between; }
+    .date { flex: 0 0 auto; font-weight: normal; text-align: right; }
     a { color: #111; text-decoration: none; }
     @media print { a { color: #111; } }
   </style>
@@ -37,20 +38,20 @@
     <section><h2>Soft Skills</h2><p>Time management, adaptability, attention to detail, analytical thinking, and stress management under pressure</p></section>
     <section><h2>Certifications</h2><ul><li>Google Technical Support Fundamentals</li><li>Microsoft 365: Administration</li><li>Advanced PowerShell: Automating Active Directory Administration</li></ul></section>
     <section><h2>Experience</h2>
-      <h3>IT Staff Intern, Laguna State Polytechnic University <span class="date">February 2024 - June 2024</span></h3>
+      <div class="entry-heading"><h3>IT Staff Intern, Laguna State Polytechnic University</h3><span class="date">February 2024 - June 2024</span></div>
       <ul><li>Provided onsite troubleshooting and deployment support.</li><li>Documented workflows and user guides for IT systems.</li><li>Contributed to a capstone project system for the Office of Student Affairs.</li></ul>
     </section>
     <section><h2>Project</h2>
-      <h3>Capstone Project - Centralized Accomplishment Report Management <span class="date">March 2023 - May 2024</span></h3>
+      <div class="entry-heading"><h3>Capstone Project - Centralized Accomplishment Report Management</h3><span class="date">March 2023 - May 2024</span></div>
       <ul><li>Created a document tracking system with user-level privileges for the Office of Student Affairs using Laravel, ReactJS, and MySQL.</li><li>Implemented report submission, review, attachments, comments, announcements, reminders, and role-based access.</li><li>Handled documentation and requirements gathering while learning database design and system workflows.</li></ul>
       <p>Project: <a href="https://github.com/markjiggermasacupan/lspu-osa-centralized-report">github.com/markjiggermasacupan/lspu-osa-centralized-report</a></p>
     </section>
     <section><h2>Education</h2>
-      <h3>Laguna State Polytechnic University <span class="date">October 2021 - July 2024</span></h3>
+      <div class="entry-heading"><h3>Laguna State Polytechnic University</h3><span class="date">October 2021 - July 2024</span></div>
       <p>Bachelor of Science in Information Technology</p>
-      <p>Bachelor of Science in Computer Science <span class="date">August 2018 - May 2019</span></p>
+      <div class="entry-heading"><h3>Bachelor of Science in Computer Science</h3><span class="date">August 2018 - May 2019</span></div>
     </section>
-    <section><h2>REFERENCES</h2><p style="border-bottom: 1px solid #333; padding-bottom: 5px;">Available upon request</p></section>
+    <section><h2>REFERENCES</h2><p>Available upon request</p></section>
   </main>
 </body>
 </html>
