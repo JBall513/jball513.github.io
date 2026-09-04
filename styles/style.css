@@ -88,7 +88,7 @@ footer {
 }
 
 .availability {
-  color: var(--muted);
+  color: white;
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   margin: 0 auto 0 2rem;
@@ -111,6 +111,11 @@ footer {
 .navigation a:hover,
 .navigation a:focus-visible {
   color: var(--accent);
+  text-decoration: none;
+}
+
+.navigation a {
+  text-decoration: none;
 }
 
 .navigation li {
@@ -441,6 +446,12 @@ footer {
 
   .menu-toggle {
     display: block;
+  }
+
+  .availability {
+    font-size: 0.7rem;
+    margin: 0 auto 0 1rem;
+    white-space: nowrap;
   }
 
   .navigation-menu {
