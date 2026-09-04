@@ -8,19 +8,33 @@
       content="The resume and portfolio of Mark Jigger Masacupan, a self-taught web developer."
     >
     <title>Mark Jigger Masacupan | Web Developer</title>
-    <link rel="stylesheet" href="styles/style.css?v=4">
+    <link rel="stylesheet" href="styles/style.css?v=5">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <nav class="navigation" aria-label="Main navigation">
         <a class="logo" href="#top">MJ<span>.</span></a>
-        <p class="availability">Available for learning opportunities</p>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navigation-menu" id="primary-navigation">
+          <p class="availability">Available for learning opportunities</p>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-action" href="assets/Mark-Jigger-Masacupan-Resume.pdf">Resume</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -100,7 +114,7 @@
               Practicing clear, balanced layouts that make information easy to
               follow and comfortable to read.
             </p>
-            <p class="project-status"><span class="component-status -diary">Personal Diary</span></p>
+            <p class="project-status"><span class="component-status -pending">In progress</span></p>
           </article>
         </div>
       </section>
@@ -118,6 +132,6 @@
     <footer>
       <p>© 2026 Mark Jigger Masacupan</p>
     </footer>
-    <script src="scripts/script.js?v=4" defer></script>
+    <script src="scripts/script.js?v=5" defer></script>
   </body>
 </html>
